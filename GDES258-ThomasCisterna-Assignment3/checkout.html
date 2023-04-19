@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <title>Cross Odor - Checkout</title>
+</head>
+<body>
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="checkout">
+        <div class="inputs">
+            <h2>Contact Information</h2><br>
+            <input type="text" class="checkout-email" placeholder="Email">
+            <h2>Shipping Information</h2><br>
+            <input type="text" class="checkout-first" placeholder="First name">
+            <input type="text" class="checkout-last" placeholder="Last name">
+
+            <input type="text" class="checkout-comp" placeholder="Company name (optional)">
+
+            <input type="text" class="checkout-address" placeholder="Address">
+
+            <input type="text" class="checkout-number" placeholder="Apartment, suite, etc. (optional)">
+
+            <input type="text" class="checkout-city" placeholder="City">
+
+            <input type="text" class="checkout-country" placeholder="Country">
+            <input type="text" class="checkout-post" placeholder="Postal Code">
+
+            <input type="text" class="checkout-phone" placeholder="Phone (optional)">
+            
+            <button class="checkout-button">Checkout &nbsp; <i class="fa fa-arrow-circle-right"></i></button>
+        </div>
+
+
+
+        <div class="checkout-summary">
+            <div class="checkout-wrapper">
+                <div class="checkoutImageWrapper" id="checkoutImageWrapper">
+
+                </div>
+                <div class="checkoutTextWrapper" id="checkoutTextWrapper">
+                    
+                </div>
+            </div>
+            <div class="checkout-wrapper">
+                <div class="checkoutSubWrapper">
+                    <h3>Subtotal</h3>
+                </div>
+                <div class="checkoutPriceWrapper" id="checkoutPriceWrapper">
+
+                </div>
+            </div>
+            <div class="checkout-wrapper3">
+                <div class="checkoutTotalWrapper">
+                    <h3>Total</h3>
+                </div>
+                <div class="checkoutPriceWrapper" id="checkoutTotalWrapper">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="Logo">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="js/checkout.js"></script>
+</html>
